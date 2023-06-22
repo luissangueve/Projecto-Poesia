@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+
+
+
+@font-face {
+    font-family:'Passion';
+    src: url(fontes/Passion_One/PassionOne-Regular.ttf)format('truetype');
+}
+@font-face {
+    font-family:'Sriracha';
+    src: url(fontes/Sriracha/Sriracha-Regular.ttf)format('truetype');
+}
+
+:root{
+    --font1:verdana, Geneva,Tahoma,sans-serif;
+    --font2:'Passion', cursive;
+    --font3:'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+div{
+    float: left;
+    margin-top: -10px;
+}
+header{
+    background-image: linear-gradient(to right,black,rgba(11, 148, 182, 0.096));
+    color: white;
+    text-align: center;
+    box-shadow: 1px 2px 2px black;
+   
+    
+}
+
+main{
+    background-color: red;
+}
+header.tecnologia{
+    background-image: url(imagens/funtoTecnologia.jpg);
+    background-position: center right;
+    background-size: cover;
+   
+    
+}
+header.mulher{
+    /*background-image: linear-gradient(to right,black,#40e0d09a);*/
+    background-image: url(imagens/fundoMulher.jpg);
+    background-position: center right;
+    background-size: cover;
+
+}
+header.amor{
+    
+    background-image: url(imagens/fundoAmor.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+header.coracao{
+    background-image: url(imagens/fundoCoracao.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+header h1{
+    /*padding-top: 50px;*/
+    vertical-align: middle;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;/*o tamanho do titulo vai ser 10% da largura actual, responsividade*/
+}
+header p{
+    padding-bottom: 50px;
+    
+}
+header a.navegacao:hover{
+    background-color: #08403ec7;
+}
+header a.navegacao{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    height: 30px;
+    width: 180px;
+    
+    margin-top: 0px;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+header a.link, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #4febe569;
+}
+header a.link:hover, footer a:hover{
+   color: #106360;
+   text-decoration: underline;
+}
+header nav{
+    background-color: #4febe569;
+}
+header.mulher nav{
+    background-color: rgba(0, 0, 0, 0.836);
+}
+header.amor nav{
+    background-color: rgba(0, 0, 0, 0.836);
+}
+section{
+      /*quer dizer que cada section vai receber 10% da altura da tela como paddings*/
+    
+      padding-top: 10vh;
+    padding-bottom: 10vh;
+     
+    line-height: 1.4em;
+    padding-left: 30px;
+
+    font-family: var(--font3);
+    font-size: 2.7vw;
+}
+section p{
+    padding-bottom: 2em;
+   
+    
+}
+section h2{
+    color: #08403E;
+}
+/*
+section h2.mulher{
+    
+    color: black;
+    background-image: linear-gradient(to right,#40e0d03d,#40e0d011);
+    padding-top: 1px;
+}*/
+section.normal{
+    background-color: #d8f3f244; /*#caeeed56*/
+    color: black;
+}
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
+    background-attachment: fixed;
+}
+section.imagem p{
+   display: inline-block;/*a caixa vai ser do tamanho do conteudo*/
+   padding: 10px;
+    background-color:rgba(0, 0, 0, 0.507);
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+section#imgMulher01{
+    background-image: url(imagens/imagem6.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#imgMulher02{
+    background-image: url(imagens/imagem7.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#imgAmor01{
+    background-image: url(imagens/imagem3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section#imgAmor02{
+    background-image: url(imagens/imagem2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section#imgCoracao01{
+    background-image: url(imagens/imagem4.jpg);
+    background-position: left center;
+    background-size: cover;
+}
+section#imgCoracao02{
+    background-image: url(imagens/imagem5.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:10px ;
+}
+#dery{
+    width: 210px;
+    height: 210px;
+   float: right;
+   
+   box-shadow: 0px 1px 6px 1px black;
+   border: 1px solid black;
+}
+#dery:hover{
+    width: 215px;
+    height: 215px;
+   box-shadow: 2px 2px 15px 2px black;
+   
+}
+#deryF{
+    width: 210px;
+    height: 210px;
+   float: right;
+    margin: 5%;
+ 
+  
+}
+figcaption{
+    font-family: var(--font1);
+    font-size: 16px;
+    line-height: 24px;
+}
+figcaption a{
+    text-decoration: none;
+}
+figcaption a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+
+
+
